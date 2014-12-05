@@ -120,7 +120,7 @@ window.open('memlogout.php', '_blank');
 </script>
 <link type="text/css" rel="stylesheet" href="dateselectionstyle.css" />
 <br>
-<a href="memlogin.php" class="logoutpan"> Back</a> &nbsp <a href="memlogout.php" class="logoutpan"> Log Out</a> &nbsp (Avoid Refreshing or Going Back, you may be logged out)
+<a href="memlogin.html" class="logoutpan"> Back</a> &nbsp <a href="memlogout.php" class="logoutpan"> Log Out</a> &nbsp (Avoid Refreshing or Going Back, you may be logged out)
 <br>
 <br>
 <br>
