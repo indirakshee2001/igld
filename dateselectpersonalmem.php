@@ -108,7 +108,7 @@ exit('<h2>Mismatch</h2>Sorry, you must enter a valid username and password to lo
 	
 	?>
 <br>
-<a href="dateselectlanding.php" class="logoutpan"> Back</a> &nbsp <a href="logout.php" class="logoutpan"> Log Out</a> &nbsp (Avoid Refreshing or Going Back, you may be logged out)
+<a href="dateselectlandingmem.php" class="logoutpan"> Back</a> &nbsp <a href="memlogout.php" class="logoutpan"> Log Out</a> &nbsp (Avoid Refreshing or Going Back, you may be logged out)
 <link type="text/css" rel="stylesheet" href="dateselectionstyle.css" />
 
 <script type = 'text/javascript'>
