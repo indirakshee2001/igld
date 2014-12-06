@@ -38,7 +38,7 @@ if (mysql_num_rows($data) == 1) {
 else {
     // The username/password are incorrect so send the authentication headers
         exit('<h2>Mismatch</h2>Sorry, you must enter a valid username and password to log in and access this page. If you ' .
-      'aren\'t a registered member, please <a href="joinmailing.html">sign up</a>.');
+    'aren\'t a registered member, please contact indrakshiguild@gmail.com');
   }
   
  
