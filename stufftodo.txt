@@ -1,3 +1,5 @@
 In ddate, the nw does not show the heart in the nw.., check out why.
 Check out why the scenery door is misprint as grave in the east.
 Why is my Ren Zi showing my total calsh day - what is the mistake - in print of clash day or in database itself?
+Improve the Header in the Client Date Selection - make really good day in that file
+
