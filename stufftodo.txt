@@ -4,3 +4,4 @@ Improve the Header in the Client Date Selection - make really good day in that f
 Remove the automatic refresh in automated IChing
 Do Not allow any one to access the Full Year screens in mem-related work
 Rephrase all the Headers in week,month,bimonth and year for the memaccess
+Make Sure all localdb are set to includedb
