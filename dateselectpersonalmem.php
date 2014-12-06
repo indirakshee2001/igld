@@ -69,7 +69,7 @@ exit('<h2>Mismatch</h2>Sorry, you must enter a valid username and password to lo
 		
 		if($Member_Type_Result == "") {
 			exit('<h2>Mismatch</h2>Sorry, you must enter a valid username and password to log in and access this page. If you ' .
-    'aren\'t a registered member, please <a href="joinmailing.html">sign up</a>. To Log in please <a href="subslogin.html">click here</a>');
+    'aren\'t a registered member. To Log in please <a href="memberlogin.html">click here</a>');
 
 			}
 			
@@ -78,20 +78,29 @@ exit('<h2>Mismatch</h2>Sorry, you must enter a valid username and password to lo
 			$validtill = "None";
 			}
 			
-		if($Member_Type_Result == "member") {
+		if($Member_Type_Result == "guildmember") {
 			$Member_Valid_sql = "Select `validto` from `members` where `members`.`username` = '{$This_User}'"; 
 			$Member_Valid_query = mysql_query($Member_Valid_sql);
 			$Member_Valid_Result =  mysql_result($Member_Valid_query,0,0);
 			echo " - and can use this software till ". $Member_Valid_Result;
+			
+				$thisisnowdate = date('d');
+				$thisisnowmonth = date('M');
+				$thisisnowyear = date('y');
+				$thisisthenow = $thisisnowyear."-".$thisisnowmonth."-".$thisisnowdate;
+			
+					if ($Member_Valid_Result <  date('Y-m-d')) {
+						exit('Sorry, you have run out of validity to access the software. please contact indrakshiguild@gmail.com');
+					}	
+			
 		} 
 		
+		if($Member_Type_Result == "Member") {
+			exit('<h2>Mismatch</h2>Sorry, you do not have access to this section'); 
+		}
+		
 		if($Member_Type_Result == "subscriber") {
-			$Member_Valid_sql = "Select `validto` from `members` where `members`.`username` = '{$This_User}'"; 
-			$Member_Valid_query = mysql_query($Member_Valid_sql);
-			$Member_Valid_Result =  mysql_result($Member_Valid_query,0,0);
-			echo " - you can use this software till ". $Member_Valid_Result;
-			
-			echo " - and usage is ". $Member_Credit_Result; 
+			exit('<h2>Mismatch</h2>Sorry, you do not have access to this section'); 
 		} 
 	}
 	
