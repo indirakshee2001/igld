@@ -7,7 +7,7 @@ session_start();
 if(!isset($_SESSION['thisusername'])) {
 
 exit('<h2>Mismatch</h2>Sorry, you must enter a valid username and password to log in and access this page. If you ' .
-    'aren\'t a registered member, please contact indrakshiguild@gmail.com. To Log in please <a href="memberlogin.html">click here</a>');
+    'aren\'t a registered member, please contact indrakshiguild@gmail.com. To Log in please <a href="memlogin.html">click here</a>');
 
 } else {
 
